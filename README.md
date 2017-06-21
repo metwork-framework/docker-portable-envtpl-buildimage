@@ -1,2 +1,2 @@
-# docker-static-envtpl-buildimage
+# docker-portable-envtpl-buildimage
 a docker image to build a static envtpl "binary" made with pyinstaller
