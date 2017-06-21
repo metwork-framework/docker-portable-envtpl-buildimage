@@ -12,6 +12,11 @@ RUN yum -y --enablerepo=epel install python27 python27-devel python27-pip python
 RUN pip2.7 install envtpl && \
     pip2.7 install pyinstaller
 
-RUN pyinstaller /usr/bin/envtpl
-RUN tar -cvf /portable_envtpl.tar /dist/envtpl && \
+RUN cd /usr/lib/python2.7/site-packages && \
+    pyinstaller envtpl.py
+
+RUN cp -Rf /usr/lib/python2.7/site-packages/envtpl/dist/envtpl /portable_envtpl && \
+    tar -cvf /portable_envtpl.tar /portable_envtpl && \
     gzip -f /portable_envtpl.tar
+
+CMD cat /portable_envtpl.tar.gz
