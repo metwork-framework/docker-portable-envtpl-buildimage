@@ -18,6 +18,11 @@ A docker image to build a static envtpl "binary" made with pyinstaller
         cd portable_envtpl
         ./envtpl --help
 
+
+## Usage with an alternate envtpl source
+
+	docker run --rm -e ENVTPL_SOURCE=git+https://github.com/thefab/envtpl.git thefab/portable-envtpl-buildimage >portable_envtpl.tar.gz
+
 ## Build
 
 	make

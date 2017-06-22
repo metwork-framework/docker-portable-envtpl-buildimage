@@ -1,5 +1,6 @@
 NAME=thefab/portable-envtpl-buildimage
 VERSION=$(shell ./version.sh)
+ENVTPL_SOURCE=envtpl
 
 build:
 	docker build -f Dockerfile -t $(NAME):$(VERSION) .

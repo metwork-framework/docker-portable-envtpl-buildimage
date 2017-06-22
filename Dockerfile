@@ -1,22 +1,17 @@
 FROM centos:centos6
 MAINTAINER Fabien MARTY <fabien.marty@gmail.com>
 
-ADD root/build/add_epel.sh /build/add_epel.sh
-RUN /build/add_epel.sh
+ENV ENVTPL_SOURCE=envtpl
 
-ADD root/build/add_ius.sh /build/add_ius.sh
-RUN /build/add_ius.sh
+ADD root/add_epel.sh /add_epel.sh
+RUN /add_epel.sh
 
-RUN yum -y --enablerepo=epel install python27 python27-devel python27-pip python27-setuptools python27-virtualenv
+ADD root/add_ius.sh /add_ius.sh
+RUN /add_ius.sh
 
-RUN pip2.7 install envtpl && \
-    pip2.7 install pyinstaller
+RUN yum -y install python27 python27-devel python27-pip python27-setuptools python27-virtualenv git
 
-RUN cd /usr/lib/python2.7/site-packages && \
-    pyinstaller envtpl.py
+RUN pip2.7 install pyinstaller
 
-RUN cp -Rf /usr/lib/python2.7/site-packages/envtpl/dist/envtpl /portable_envtpl && \
-    tar -cvf /portable_envtpl.tar /portable_envtpl && \
-    gzip -f /portable_envtpl.tar
-
-CMD cat /portable_envtpl.tar.gz
+ADD root/make_and_cat.sh /make_and_cat.sh
+CMD /make_and_cat.sh
