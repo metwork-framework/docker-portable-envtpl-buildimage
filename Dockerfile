@@ -1,7 +1,7 @@
 FROM centos:centos6
 MAINTAINER Fabien MARTY <fabien.marty@gmail.com>
 
-ENV ENVTPL_SOURCE=envtpl
+ENV ENVTPL_SOURCE=git+https://github.com/metwork-framework/envtpl
 
 ADD root/add_epel.sh /add_epel.sh
 RUN /add_epel.sh
