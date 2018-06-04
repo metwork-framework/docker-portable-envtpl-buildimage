@@ -5,7 +5,7 @@
 [![Travis](https://img.shields.io/travis/metwork-framework/docker-portable-envtpl-buildimage.svg)](https://travis-ci.org/metwork-framework/docker-portable-envtpl-buildimage)
 [![Docker Pulls](https://img.shields.io/docker/pulls/metwork/portable-envtpl-buildimage.svg)](https://hub.docker.com/r/metwork/portable-envtpl-buildimage/)
 [![DockerHub](https://img.shields.io/badge/docker%20hub-link-green.svg)](https://hub.docker.com/r/metwork/portable-envtpl-buildimage/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
+[![License](https://img.shields.io/badge/license-BSD-blue.svg)]()
 [![Maturity](https://img.shields.io/badge/maturity-beta-blue.svg)]()
 [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)]()
 
