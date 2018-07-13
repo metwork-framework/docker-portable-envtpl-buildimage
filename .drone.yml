@@ -25,4 +25,5 @@ pipeline:
     username: drone
     when:
       event: push
+      status: [ failure ]
     secrets: [ slack_webhook ]
