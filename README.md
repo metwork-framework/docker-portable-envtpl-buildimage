@@ -2,7 +2,7 @@
 
 ## Status (master branch)
 
-[![Drone CI](http://51.38.41.227:8000/api/badges/metwork-framework/docker-portable-envtpl-buildimage/status.svg)](http://51.38.41.227:8000/metwork-framework/docker-portable-envtpl-buildimage)
+[![Drone CI](http://metwork-framework.org:8000/api/badges/metwork-framework/docker-portable-envtpl-buildimage/status.svg)](http://metwork-framework.org:8000/metwork-framework/docker-portable-envtpl-buildimage)
 [![DockerHub](https://github.com/metwork-framework/resources/blob/master/badges/dockerhub_link.svg)](https://hub.docker.com/r/metwork/portable-envtpl-buildimage/)
 [![License](https://github.com/metwork-framework/resources/blob/master/badges/bsd.svg)]()
 [![Maturity](https://github.com/metwork-framework/resources/blob/master/badges/beta.svg)]()
