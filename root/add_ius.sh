@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rpm -Uvh https://centos6.iuscommunity.org/ius-release.rpm
+rpm -Uvh https://repo.ius.io/ius-release-el6.rpm
