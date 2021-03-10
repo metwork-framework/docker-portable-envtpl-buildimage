@@ -1,8 +1,9 @@
-FROM centos:centos6
+FROM metwork/centos6:latest
 MAINTAINER Fabien MARTY <fabien.marty@gmail.com>
 
 ENV ENVTPL_SOURCE=git+https://github.com/metwork-framework/envtpl
 
+# Maybe we do not need to add epel repo (included in metwork/centos6)
 ADD root/add_epel.sh /add_epel.sh
 RUN /add_epel.sh
 
