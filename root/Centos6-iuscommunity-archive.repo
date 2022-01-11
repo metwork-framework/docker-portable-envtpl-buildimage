@@ -1,6 +1,0 @@
-[centos6-iuscommunity]
-name=centos6-iuscommunity
-baseurl=https://repo.ius.io/archive/6/x86_64/
-gpgcheck=0
-gpenable=1
-
